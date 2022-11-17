@@ -25,4 +25,5 @@ def set():
         return str(r2.set('key',str(input).encode('UTF-8')))
     return str(r.set('key',str(input).encode('UTF-8')))
 
-app.run(host='0.0.0.0')
+if __name__ == "__main__":
+    app.run(host='0.0.0.0')
