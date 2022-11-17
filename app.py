@@ -24,3 +24,5 @@ def set():
     if args.get('internal') == 'true':
         return str(r2.set('key',str(input).encode('UTF-8')))
     return str(r.set('key',str(input).encode('UTF-8')))
+
+app.run(host='0.0.0.0')
